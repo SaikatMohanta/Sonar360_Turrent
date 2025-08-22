@@ -4,7 +4,7 @@
 
 ## Overview
 
-The **Sonar Turret is a **360°* real-time ultrasonic surveillance system** built with:
+The **Sonar Turret** is a **360° real-time ultrasonic surveillance system** built with:
 - **Arduino UNO + HC-SR04 ultrasonic sensors (x3)**
 - **DHT22 sensor** (for environmental calibration)
 - **Python backend** for data processing, object tracking, clustering, and visualization
