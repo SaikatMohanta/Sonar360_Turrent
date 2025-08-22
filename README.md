@@ -38,7 +38,7 @@ pip install -r python/requirements.txt
 - Upload (ctrl + r)
 - Run the turret from terminal/command prompt:
 
-### python run_turret.py --port COM3 --baud 115200 --viz 3D
+### python run_turret.py --port COMXX --baud 115200 --viz 3D
 
 
 ## Flowchart LR :
