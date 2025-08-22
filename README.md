@@ -47,17 +47,3 @@ pip install -r python/requirements.txt
     B --> C[Object Tracking + Clustering]
     C --> D[Matplotlib Visualization (2D/3D)]
 
-
-## Folder Structure :
-
-sonar-turret/
-│── arduino/
-│   └── sonar_turret.ino          # Arduino firmware
-│── python/
-│   ├── sonar_turret.py           # Main class (object tracking, clustering)
-│   ├── run_turret.py             # CLI runner
-│   └── requirements.txt
-│── examples/  
-│── docs/ 
-│── LICENSE
-│── README.md
