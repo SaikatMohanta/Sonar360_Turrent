@@ -1,15 +1,15 @@
-#Arduino Sonar Turret – 360° Ultrasonic Surveillance
+# Arduino Sonar Turret – 360° Ultrasonic Surveillance
 
 ![Project Banner](docs/banner_placeholder.png)
 
-##Overview
+## Overview
 
 The **Sonar Turret is a **360° real-time ultrasonic surveillance system** built with:
 - **Arduino UNO + HC-SR04 ultrasonic sensors (x3)**
 - **DHT22 sensor** (for environmental calibration)
 - **Python backend** for data processing, object tracking, clustering, and visualization
 
-##Key Features:
+## Key Features:
 
 - Dynamic **speed of sound correction** using temperature + humidity  
 - **Object clustering & tracking** (velocity, direction) with DBSCAN  
@@ -17,7 +17,7 @@ The **Sonar Turret is a **360° real-time ultrasonic surveillance system** built
 - Modular design: Arduino firmware + Python data pipeline  
 
 
-##Setup:
+## Setup:
 
 ###Hardware Requirements
 - Arduino UNO (or compatible board)  
@@ -25,30 +25,31 @@ The **Sonar Turret is a **360° real-time ultrasonic surveillance system** built
 - DHT22 Temperature & Humidity Sensor  
 - PC (Windows/Linux/Mac) with Python 3.8+ installed  
 
-###Software Requirements
+### Software Requirements
 - Arduino IDE  
 - Python 3.8+ with dependencies  
 
-###Install Python dependencies:
+### Install Python dependencies:
 pip install -r python/requirements.txt
 
-###Upload Arduino Code:
+### Upload Arduino Code:
 - Open arduino/sonar_turret.ino in Arduino IDE
 -Select correct Board & Port
 - Upload (ctrl + r)
 - Run the turret from terminal/command prompt:
 
-###python run_turret.py --port COM3 --baud 115200 --viz 3D
+### python run_turret.py --port COM3 --baud 115200 --viz 3D
 
 
-##Flowchart LR
+## Flowchart LR
 
     A[Arduino UNO] -->|JSON via Serial| B[Python Processing]
     B --> C[Object Tracking + Clustering]
     C --> D[Matplotlib Visualization (2D/3D)]
 
 
-##Folder Structure :
+## Folder Structure :
+
 sonar-turret/
 │── arduino/
 │   └── sonar_turret.ino          # Arduino firmware
